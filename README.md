@@ -26,9 +26,9 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 ---
 # my algoritm my way:
-- you need to keep this in mine
-1. if you use brakects --->() put you math expersion withou space between brackets like this --> (x + x)-(x ^ 2)
-2. if you dont brakects --->() put you math expersion with space like this --> x + x - 5
+- you need to keep this in mind
+1. if you use brackets --->() put your math expression without space between brackets like this --> (x + x)-(x ^ 2)
+2. if you dont brackets --->() put you math expression with space like this --> x + x - 5
 ---
 # varibles
 
@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 <img width="332" height="131" alt="Screenshot 2025-10-10 155606" src="https://github.com/user-attachments/assets/1d7a659c-4c15-4bd2-84c2-ab971c38ed4c" />
 
-- put your math expersion here like x + x
+- put your math expression here like x + x
 
 2.quantity
 
@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 
 ---
-# supported math expersions
+# supported math expressions 
 
 
 2. # sin
@@ -100,6 +100,9 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 # also you can add this things in front of your expersion
 1.pi
+
 2.pi/2
+
 3.e
+
 example: sin pi or sin(pi + 2)
