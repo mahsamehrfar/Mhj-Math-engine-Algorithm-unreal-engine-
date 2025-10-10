@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 # my algoritm my way:
 - you need to keep this in mind
 1. if you use brackets --->() put your math expression without space between brackets like this --> (x + x)-(x ^ 2)
-2. if you dont brackets --->() put you math expression with space like this --> x + x - 5
+2. if you dont use brackets --->() put you math expression with space like this --> x + x - 5
 ---
 # varibles
 
