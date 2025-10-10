@@ -19,6 +19,12 @@ This is a realtime algorithm for calculating numbers inside UE5. This algorithm 
 https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 ---
+
+# how to install
+1. download the file 
+2. put the file in your project content folder
+
+---
 # my algoritm my way:
 - you need to keep this in mine
 1. if you use brakects --->() put you math expersion withou space between brackets like this --> (x + x)-(x ^ 2)
