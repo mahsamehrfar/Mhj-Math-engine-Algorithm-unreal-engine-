@@ -20,6 +20,16 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 ---
 
+#so how it works??
+- first your expression goes to check if you use brackets or no if you use it will calculate them first and sort them
+- then the float and operation is saved in arrays  
+- by using the shunting yard algorithm it organized and sort from high priority to low
+- then it goes to operator mode and calculate the math
+- it will replace you operations with calculated number
+- then it feed to checker to check if we have another high priority function
+- if it isn't it will go to next priority one
+- then all your expressions will be replaced by one number and that number is the answer
+
 # how to install
 1. download the file 
 2. put the file in your project content folder
