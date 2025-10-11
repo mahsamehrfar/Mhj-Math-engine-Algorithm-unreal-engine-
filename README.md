@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
 
 ---
 
-#so how it works??
+# so how it works??
 - first your expression goes to check if you use brackets or no if you use it will calculate them first and sort them
 - then the float and operation is saved in arrays  
 - by using the shunting yard algorithm it organized and sort from high priority to low
