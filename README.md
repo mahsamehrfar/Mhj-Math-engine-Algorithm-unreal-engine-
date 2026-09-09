@@ -1,118 +1,59 @@
-# ECLIPSE-Math-engine-Algorithm-unreal-engine-
-This is a realtime algorithm for calculating numbers inside UE5. This algorithm is made only with blueprints and does not require installing plugins or compilers.
 
+# 🧮 MHJ Algorithm Math Engine for Unreal Engine
 
-![unnamed(2)](https://github.com/user-attachments/assets/2f6e2ca4-16b2-4b59-8b02-69fab0b78a38)
+![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-5.0+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Real-Time](https://img.shields.io/badge/Performance-Real--Time-orange.svg)
 
+**MHJ Algorithm Math Engine** is a powerful, high-performance mathematical parser and graphing plugin built natively for Unreal Engine. It allows developers to evaluate complex string-based math expressions at runtime, calculate calculus operations, and instantly generate beautiful 2D and 3D graphs using Procedural Meshes.
 
+Whether you are building a sci-fi UI, an educational tool, or a complex physics simulator, this plugin gives you full mathematical freedom entirely inside Blueprints.
 
----
-# this is how it looks
+## ✨ Key Features
 
-<img width="422" height="314" alt="Screenshot 2025-10-10 155015" src="https://github.com/user-attachments/assets/3da39cfd-43af-4630-9820-567192c40237" />
+* ⚡ **Full Real-Time Calculation:** Parse and evaluate complex string expressions (e.g., `sin(x ^ 2 + y)`) instantly at runtime with zero lag.
+* 🌐 **3D Surface Graphing:** Generate dynamic 3D Procedural Meshes from math equations. (Perfect for terrain generation, data visualization, and dynamic VFX).
+* 📈 **2D Line Graphing:** Draw real-time 2D Cartesian graphs and UI data plots based on player inputs or in-game variables.
+* 🔍 **Root Finding Algorithm:** Built-in dynamic solvers to accurately find the roots (x-intercepts) of complex mathematical equations at runtime.
+* 📉 **Derivative Engine:** Calculate instantaneous rates of change and slopes for any given string function.
+* 📊 **Integral Engine:** Perform real-time area-under-the-curve calculus evaluations using advanced quadrature parameters (Simpson's rule, Tanh-Sinh, etc.).
+* 🔵 **100% Blueprint Compatible:** No C++ knowledge required. Every feature is exposed to Unreal's Blueprint visual scripting system.
 
----
+## 📸 Showcase
 
-# also you can make graph with it (realtime)
+<img width="1729" height="750" alt="Screenshot 2026-09-10 021011" src="https://github.com/user-attachments/assets/6ce1cec6-2fd8-46eb-8edc-85c3f62d87e0" />
+<img width="1777" height="775" alt="Screenshot 2026-09-10 014233" src="https://github.com/user-attachments/assets/af5fafae-e1fb-4336-9fb0-1f3e5f051a3a" />
 
+## 🚀 Installation
 
-https://github.com/user-attachments/assets/edd0b0a0-db7c-4fc1-88b7-0d43bd7817c5
+1. Download the latest release from the [Releases](#) tab, or clone this repository.
+2. Inside your Unreal Engine project directory, create a folder named `Plugins` (if it doesn't already exist).
+3. Extract the `MHJ_AlgorithmMathEngine` folder into the `Plugins` directory.
+4. Right-click your `.uproject` file and select **Generate Visual Studio project files**.
+5. Open your project. When prompted, click **Yes** to rebuild the missing plugin modules.
+6. Enable the plugin via **Edit > Plugins > Math > MHJ Algorithm Math Engine**.
 
----
+## 🛠️ Quick Start & Usage
 
-# so how it works??
-- first your expression goes to check if you use brackets or no if you use it will calculate them first and sort them
-- then the float and operation is saved in arrays  
-- by using the shunting yard algorithm it organized and sort from high priority to low
-- then it goes to operator mode and calculate the math
-- it will replace you operations with calculated number
-- then it feed to checker to check if we have another high priority function
-- if it isn't it will go to next priority one
-- then all your expressions will be replaced by one number and that number is the answer
+### 1. Real-Time Math Evaluation
+Evaluate a math string on the fly by passing in a dictionary/map of variables.
+```text
+[ "sin(x * x + y)" ] ---> [ MHJ Math Engine ] ---> [ Result: 0.841 ]
+```
 
-# how to install
-1. download the file 
-2. put the file in your project content folder
+### 2. Procedural 3D Graphing
+Feed an X and Y nested `For-Loop` into the Math Engine, output the `Z` height, and pass the arrays into a `Procedural Mesh Component` to generate real-time 3D solid graphs. (Supports Normals, UVs, and custom bounds).
 
----
-# my algoritm my way:
-- you need to keep this in mind
-1. if you use brackets --->() put your math expression without space between brackets like this --> (x + x)-(x ^ 2)
-2. if you dont use brackets --->() put you math expression with space like this --> x + x - 5
----
-# varibles
+### 3. Calculus Engines
+Pass your mathematical string into the **Integral** or **Derivative** nodes, define your Min/Max bounds, choose your accuracy step counts, and retrieve precision outputs directly in Blueprints.
 
-1.code:
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! 
+Feel free to check out the [issues page](#) to report bugs or suggest new algorithms.
 
-<img width="332" height="131" alt="Screenshot 2025-10-10 155606" src="https://github.com/user-attachments/assets/1d7a659c-4c15-4bd2-84c2-ab971c38ed4c" />
-
-- put your math expression here like x + x
-
-2.quantity
-
-
-<img width="261" height="308" alt="Screenshot 2025-10-10 155802" src="https://github.com/user-attachments/assets/585139cc-f35c-44e6-bd83-697c3a49e729" />
-
-- you can put a quantity in your math expersion like ---> x + x => x=3 =>> 3 + 3
-
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-# supported math expressions 
-
-
-2. # sin
-- returns the sin of x in rad
-- example: sin x or sin(x + x)
-
-  
-2. # cos
-- returns the cos of x in rad
-- example: cos x or cos(x + x)
-
-  
-3. # tan
-- returns the tan of x in rad
-- example: tan x or tan(x + x)  
-
-4. # log
-- returns the log of x by  10
-- example: log x or log(x + x)
-
-4. # abs
-- returns the absolute of x
-- example: abs x or abs(x + x)
-
-5. # *
-- returns the multiply of x by y
-- example: x * 3 or (x + 3)*(x - 2)
-
-6. # /
-- returns the divide of x by y
-- example: x / 3 or (x + 3)/(x - 2)  
-
-7. # ^
-- returns the power of x by y
-- example: x ^ 3 or (x + 3)^(x - 2)  
-
-7. # #
-- returns the squre root of x by y
-- example: x # 2 or (x + 3)#(x - 2)  
-
-8. # +
-- returns the add of x by y
-- example: x + 3 or (x + 3)+(x - 2)  
-
-9. # -
-- returns the subtraced of x by y
-- example: x - 3 or (x + 3)-(x - 2)  
-
----
-
-# also you can add this things in front of your expersion
-1.pi
-
-2.pi/2
-
-3.e
-
-example: sin pi or sin(pi + 2)
+**Created by MHJ Studios** | Powering Math in Unreal Engine
+```
